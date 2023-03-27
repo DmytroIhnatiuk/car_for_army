@@ -1,0 +1,28 @@
+
+$bg: #353535;;
+$green: #00A550;
+$white: #FFFFFF;
+$gradient:linear-gradient(180.28deg, #069149 10.43%, #3A3A3A 87.4%);
+
+$maxWidth: 1440;
+$minWidth: 375;
+
+
+:root {
+//  --container-width: #{gem(1200)};
+//  --footer-heigh: gem(103);
+  --header-height: #{gem(108)};
+}
+//
+@media all and (max-width: 1024px) {
+  :root {
+    --header-height: #{gem(68)};
+  }
+
+}
+//@media all and (max-width: 480px) {
+//  :root {
+//    --container-width: #{gem(345)};
+//  }
+//}
+@import "typography";

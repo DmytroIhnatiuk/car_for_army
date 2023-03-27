@@ -1,0 +1,38 @@
+.join{
+   &__content{
+    padding-top: gem(60);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: gem(20);
+    @media (max-width: 991px){
+        grid-template: repeat(2, 1fr)/repeat(2, 1fr) ;
+    }
+    @media (max-width: 480px){
+        grid-template: repeat(3, 1fr)/repeat(1, 1fr) ;
+        padding-top: gem(40);
+    }
+   }
+   &__item{
+    border: 3px solid $white;
+    padding: gem(15) gem(23) gem(25);
+    border-radius: gem(10);
+    .number{
+        color: $green;
+        font-weight: 800;
+        font-size: gem(64);
+        line-height: gem(77);
+    }
+    @media (max-width: 991px){
+       &:last-child{
+        grid-column: 1/3;
+       }
+    }
+    @media (max-width: 480px){
+        &:last-child{
+         grid-column: 1/2;
+        }
+     }
+
+    
+   }
+}

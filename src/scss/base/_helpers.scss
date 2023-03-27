@@ -1,0 +1,87 @@
+
+
+//HEADERS
+h1, .h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h2, .h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  z-index: 1;
+  position: relative;
+  font-weight: 700;
+
+}
+
+h3, .h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  font-weight: 700;
+}
+
+
+h4, .h4 {
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-h4);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h5, .h5 {
+  font-size: var(--font-size-h5);
+  line-height: var(--line-height-h5);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+
+//TEXT
+.text {
+    &__18 {
+      font-size: gem(18);
+      line-height: gem(20);
+      font-weight: 500;
+      @media (max-width: 480px){
+        font-size: gem(16);
+        line-height: gem(19);
+    }
+    }
+  }
+
+
+
+
+
+
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+.--just-between {
+  justify-content: space-between;
+}
+.--align-end {
+  align-items: flex-end;
+}
+
+
+
+
+
+
+
+
+

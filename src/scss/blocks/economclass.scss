@@ -1,0 +1,46 @@
+.economclass{
+    &__contain{
+        display: flex;
+        justify-content: space-between;
+        @media all and (max-width: 991px){
+            flex-direction: column;
+        }
+    }
+    &__content{
+        width: gem(575);
+        @media all and (max-width: 991px){
+            padding-bottom: gem(50);
+            width: 100%;
+        }
+    }
+    .tittle{
+        span{
+            color: $green;
+        }
+    }
+    &__descr{
+        margin: gem(20) 0 gem(35) 0 ;
+        @media all and (max-width: 480px){
+            margin-left: 0;
+        }
+    }
+    &__cars{
+        width: gem(610);
+        height: gem(310);
+        background: url(@img/car.png) center center/cover no-repeat;
+        @media all and (max-width: 991px){
+            margin: 0 auto;
+        }
+        @media all and (max-width: 480px){
+            background: url(@img/car2.png) center center/cover no-repeat;
+            width: 100%;
+            height: gem(248);
+        }
+    }
+}
+.ml58{
+    margin-left: gem(58);
+    @media all and (max-width: 991px){
+        margin-left: 0;
+    }
+}

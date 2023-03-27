@@ -1,0 +1,18 @@
+.tittle{
+h2,h3{
+    padding-left: gem(58);
+    position: relative;
+    @media (max-width: 480px){
+        padding-left: gem(30);
+    }
+    &::before{
+        content: "//";
+        position: absolute;
+        left: 0;
+        font-weight: 500;
+        
+
+    }
+}
+
+}

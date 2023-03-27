@@ -1,0 +1,34 @@
+.promo-video{
+    &__container{
+        @media (max-width: 991px){
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+    &__main{
+        width: gem(820);
+        height: gem(452);
+        border-radius: gem(10);
+        margin-right: 10px;
+
+        @media (max-width: 991px){
+            width: 100%;
+            height: gem(370);
+            margin-bottom: gem(25);
+            padding-bottom: 56.25%;
+        }
+        @media (max-width: 480px){
+            height: gem(189);
+        }
+
+    }
+    &__descr{
+        width: gem(400);
+        div{
+            margin-bottom: gem(25);
+        }
+        @media (max-width: 991px){
+            width: 100%;
+        }
+    }
+}

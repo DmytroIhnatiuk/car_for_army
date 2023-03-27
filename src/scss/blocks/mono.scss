@@ -1,0 +1,90 @@
+.mono{
+    &__contain{
+        display: flex;
+        align-items: center;
+        @media (max-width: 991px){
+            width: 100%;
+            flex-direction: column;
+            align-items:center;
+        }
+    }
+    &__circle{ 
+        height: gem(673);
+        width: gem(673);
+        background: $gradient;
+        border-radius: 50%;
+        position: relative;
+        padding: gem(61);
+        margin-right: gem(80);
+        &::before{
+            content:"";
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: 1;
+            margin: 1px; 
+            border-radius: inherit;
+            background: $bg;
+        }
+        @media (max-width: 991px){
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media (max-width: 480px){
+            height: gem(527);
+            width: gem(527);
+        }
+    }
+
+    &__circle2{
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        background: $gradient;
+        border-radius: 50%;
+        position: relative;
+        padding: gem(61);
+        &::before{
+            content:"";
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: 1;
+            margin: 1px; 
+            border-radius: inherit;
+            background: $bg;
+        }
+    }
+    &__circle3{
+        height: 100%;
+        width: 100%;
+        background: $gradient;
+        border-radius: 50%;
+        z-index: 10;
+        position: relative;
+        padding: gem(55) gem(41) gem(9) gem(67);
+        img{
+            height: 100%;
+        }
+
+    }
+
+    &__list{
+        padding-top: gem(40) ;
+    }
+    .item{
+        display: flex;
+        &__number{
+
+            font-weight: 700;
+            font-size: gem(40);
+            line-height: gem(48);
+            color: $green;
+            margin-right: gem(20);
+            margin-bottom: gem(27);
+        }
+    }
+    &__descr{
+        text-transform: uppercase;
+        margin-bottom: gem(40);
+    }
+
+}

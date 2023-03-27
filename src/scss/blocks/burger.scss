@@ -1,0 +1,44 @@
+.burger{
+    display: none;
+    width: gem(30);
+    height: gem(30);
+    z-index: 100;
+    position: relative;
+    cursor: pointer;
+    transition:all 0.5s ease;
+    &:hover{
+        &::before,
+        &::after{
+            background-color: $green;
+        }
+    }
+    &::before,
+    &::after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: gem(3);
+        background-color: $white;
+        top: gem(6)
+    } 
+        &::after{
+            top: gem(18)
+        }
+        &.active {
+            &::before {
+                transform: rotate(45deg) translate3d(0, 0, 0);
+                top: 50%;
+            }
+            &::after {
+                transform: rotate(-45deg) translate3d(0, 0, 0);
+                top: 50%;
+            }
+            }
+}
+@media (max-width: 991px){
+    .burger{
+        display: flex; 
+    }
+
+
+}

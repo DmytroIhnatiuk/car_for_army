@@ -1,0 +1,95 @@
+.video-slider{
+    &__contain{
+        @media (max-width: 991px){
+            padding-right: 0;
+            padding-left: 0;
+        } 
+    }
+
+    &__slider{
+        width: 100%;
+        height: gem(415);
+        position: relative;
+        @media (max-width: 480px){
+            height: gem(240);
+        }
+    }
+    .swiper-wrapper{
+        height: gem(340);
+        align-items: center;
+        z-index: 200;
+        @media (max-width: 991px){
+            position: absolute;
+            width: 100%;
+            left: 0;
+            right: 0;
+        }
+        @media (max-width: 480px){
+            height: gem(170);
+        }
+
+    }
+    .swiper-slide-active{
+            transform: scale(1.18); // увеличение на 20%
+            transition: transform .4s ease;
+            z-index: 10;
+            position: absolute;
+
+    }
+    .swiper-slide{
+        height: gem(235);
+        width: gem(505);
+        
+    
+        overflow: hidden;
+        border-radius: gem(10);
+        position: relative;
+        iframe{
+            height: 100%;
+            width: 100%;
+
+
+
+        }
+        @media (max-width: 480px){
+            height: gem(140);
+        }
+
+
+       
+
+    }
+    &__buttons{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: gem(130);
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        .button-next,
+        .button-prev{
+            height: gem(50);
+            width:  gem(50);
+            border-radius: 50%;
+            border: 3px solid transparent;
+            transition: border-color .35s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                border-color: $green;
+            }
+            svg{
+                width: gem(40);
+                height: gem(40);
+
+
+
+            }
+
+        }
+    }
+
+
+}
